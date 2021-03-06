@@ -1,0 +1,133 @@
+<!DoctypeHTML>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Your Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <link rel="icon" href="icon.png">
+<link rel="stylesheet" type="text/css" href="style.css">    
+<link rel="stylesheet" type="text/css" href="cartcss.css">     
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>    
+<script src="cartaddremover.js" async></script>    
+</head>
+    
+<body>
+    <nav>
+    <div class="toggle">
+    <h1 class="moblabel">YOUR LOGO</h1>    
+    <i class="fa fa-bars menu" aria-hidden="true"></i>    
+    </div>    
+    <label class="logo"><b>YOUR LOGO</b></label> 
+    <ul>    
+    <li><a link href="index.html#main" class="active">Home</a></li> 
+    <li><a link href="orders.html">Products</a></li>    
+    <li> <a link href="index.html#footer">Contact</a></li>
+    <li><a class="basketicon" href="cart.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a></li>
+        </ul>    
+    </nav>   
+
+<!-- cart -->
+    
+    <h1 class="cart">My Cart</h1>
+    
+<div class="small-container cart-page">
+  <table class="cartTable">
+    <tr>
+      <th>Product</th>  
+      <th>Quantity</th>  
+      <th>SubTotal</th>  
+    </tr> 
+      <tr class="cart-row">
+        <td>
+         <div class="cart-info">
+           <img src="userc.png">
+            <div>
+            <p>Product 1</p> 
+            <small>Price: $50.00</small><br>
+            <a href="#" class="removebtn">Remove</a>    
+            </div> 
+        </div>
+        </td>
+        <td><input type="number" class="proquantity" value="1"></td>
+        <td class="proprice">$50.00</td>
+      </tr>
+      <tr class="cart-row">
+        <td>
+         <div class="cart-info">
+           <img src="userc.png">
+            <div>
+            <p>Product 2</p> 
+            <small>Price: $55.82</small><br>
+            <a href="#" class="removebtn">Remove</a>    
+            </div> 
+        </div>
+        </td>
+        <td><input type="number" class="proquantity" value="1"></td>
+        <td class="proprice">$55.82</td>
+      </tr>
+  </table>
+    
+    <div class="total-price">
+      <table>
+        <tr>
+        <td>Total</td>
+        <td class="cart-totalprice">$105.82</td>
+       </tr>    
+      </table>
+    </div>
+</div>    
+    
+    <!-- Javascript for nav -->
+    
+        <script type="text/javascript">
+    
+        $(window).on("scroll", function(){
+            if($(window).scrollTop()){
+                $('nav').addClass('black');
+                $('.logo').addClass('pinklabel');
+                $('.logo').removeClass('logo');
+                $('nav li a').addClass('pinknav');
+                $('.toggle').addClass('pinktoggle');
+                $('.toggle').removeClass('toggle');
+                $('nav ul li').addClass('pinkblockli');
+                $('.active').addClass('pinkactive');
+                $('.active').removeClass('active');
+            }
+            else{
+                $('nav').removeClass('black');
+                $('.pinklabel').addClass('logo');
+                $('.pinklabel').removeClass('pinklabel');
+                $('nav li a').removeClass('pinknav');
+                $('.pinktoggle').addClass('toggle');
+                $('.pinktoggle').removeClass('pinktoggle');
+                $('nav ul li').removeClass('pinkblockli');
+                $('.pinkactive').addClass('active');
+                $('.pinkactive').removeClass('pinkactive');
+                
+            }
+        })
+    </script>
+    
+    <script type="text/javascript">
+   $(document).ready(function(){
+       $('.menu').click(function(){
+           $('ul').toggleClass('actives');
+       })
+   })            
+</script>
+    </body>
+    
+    

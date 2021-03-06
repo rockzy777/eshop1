@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+}
+
+.shoppingCart{
+    background-color: #F8BBD0;
+}
+
+.basketicon{
+    font-size: 20px;
+    cursor: pointer;    
+}
+
+.cart{
+    margin-top: 100px;
+    text-align: center;
+    padding: 0;
+    color: 	#202020;
+    font-size: 50px;
+    font-family: 'Pacifico', cursive;
+}
+.cart-page{
+    margin-top: -10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+    text-align: center;
+    justify-content: center;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+th{
+    text-align: left;
+    padding: 5px;
+    color: white;
+    background: #ff523b;
+    font-weight: normal;
+}
+    
+td{
+    padding: 10px 5px;
+}
+
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+
+td a{
+    color: #ff523b;
+    font-size: 12px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.total-price table{
+    border-top: 3px solid #ff523b;
+    width: 100%;
+    max-width: 430px;
+}
+
+td:last-child{
+    text-align: right;
+}
+
+th:last-child{
+    text-align: right;
+}
+
+.purchasebtndiv{
+    text-align: center;
+}
+
+.purchasebtn{
+    padding: 12px 26px;
+    outline: none;
+    border: none;
+    background-color: #ff523b;
+    color: white;
+    margin-bottom: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.purchasebtn:hover{
+   background-color: white;
+    color: #ff523b;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+@media (max-width: 600px){
+    .cart-info p{
+        display: none;
+    }
+}
